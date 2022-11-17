@@ -13,7 +13,6 @@ task:
   timeout_in: 120m
   container:
     image: anggit86/ubuntu:22.04
-    use_static_ip: true
     cpu: 8
     memory: 32G
 
