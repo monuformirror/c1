@@ -23,7 +23,7 @@ DATE_S=$(date +"%T")
 
 function upload_rom() {
 echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
-msg Upload rom..
+msg Upload rom..🎉🎊🥳🎊🎉
 echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 cd $WORKDIR/rom/$name_rom
 engzip=$(ls out/target/product/$device/*-eng*.zip | grep -v "retrofit" || true)
@@ -39,7 +39,7 @@ rclone copy out/target/product/$(grep unch $CIRRUS_WORKING_DIR/build.sh -m 1 | c
 cd $WORKDIR/rom/$name_rom/out/target/product/$device
 echo -e \
 "
-<b>✅ Build Completed Successfully ✅</b>
+<b>✅ ♥️Build Completed Successfully❤️ ✅</b>
 
 ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 <b>🚀 Rom Name :- ${name_rom}</b>
@@ -83,7 +83,7 @@ time com ccache 1
 rclone copy --drive-chunk-size 256M --stats 1s ccache.tar.gz build:ccache/$name_rom/$device -P
 rm -rf ccache.tar.gz
 echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
-msg Upload ccache succes..
+msg Upload ccache succes..🥲🥲🥲🥲🥲
 echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 }
 
