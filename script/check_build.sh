@@ -20,7 +20,8 @@ curl -F document=@build.log "https://api.telegram.org/bot${TG_TOKEN}/sendDocumen
     -F "parse_mode=html" \
     -F caption="⛔${device} Build $name_rom Error⛔
 
-Mohon bersabar ini ujian, Kalao gk sabar ya banting aja HP nya awowok😅"
+
+Please be patient, this is a test. If you can't wait, just slam down your cellphone😅"
 curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendSticker" -d sticker="CAACAgQAAx0EabRMmQACAvhjEpueqrNRuGJo5vCfzrjjnFH1gAACagoAAtMOGVGNqOvAKmWo-h4E" -d chat_id="${TG_CHAT_ID}"
 fi
 if [[ $b == *'#### build completed successfully'* ]]
@@ -32,5 +33,5 @@ else
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
   msg ❌ ...Build not completed... ❌
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
-  echo lanjut upload ccache aja 😅
+  echo Wait lets backup ccache for ur next build 😅
 fi
