@@ -56,7 +56,7 @@ echo -e \
 <b>📘 SHA1 :-</b> <code>"$(sha1sum *zip | cut -d' ' -f1)"</code>
 ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 
-<b>🙇 Maintainer : "$CIRRUS_REPO_OWNER"</b>
+<b>🙇 Maintainer : "Monu"</b>
 
 <b>🆑Device Changelogs:</b>
 <b>-Kya karega changelog ka</b>
