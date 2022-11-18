@@ -32,9 +32,9 @@ awaken=$(ls out/target/product/$device/Project-Awaken*.zip || true)
 octavi=$(ls out/target/product/$device/OctaviOS-R*.zip || true)
 p404=$(ls out/target/product/$device/?.*zip || true)
 cipher=$(ls out/target/product/$device/CipherOS-*-OTA-*.zip || true)
-rm -rf $engzip $otazip $awaken $octavi $p404 $cipher
+rm -rf $engzip $otazip $awaken $octavi $p404 #$cipher
 file_name=$(basename out/target/product/$device/*.zip)
-DL_LINK=https://veux-test.monuohlyan.workers.dev/1:/$name_rom/$device/$file_name
+DL_LINK=https://ci-build.monusbot.workers.dev/0:/$name_rom/$device/$file_name
 rclone copy out/target/product/$(grep unch $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d ' ' -f 2 | cut -d _ -f 2 | cut -d - -f 1)/*.zip build:$(grep init $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d / -f 4)/$(grep unch $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d ' ' -f 2 | cut -d _ -f 2 | cut -d - -f 1) -P
 cd $WORKDIR/rom/$name_rom/out/target/product/$device
 echo -e \
@@ -59,7 +59,7 @@ echo -e \
 <b>🙇 Maintainer : "$CIRRUS_REPO_OWNER"</b>
 
 <b>🆑Device Changelogs:</b>
-<b>-Tetap menyerah pasti bisa</b>
+<b>-Kya karega changelog ka</b>
 " > tg.html
 TG_TEXT=$(< tg.html)
 telegram_message "$TG_TEXT"
