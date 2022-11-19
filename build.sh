@@ -8,6 +8,6 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 . build/envsetup.sh
 lunch superior_X00TD-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true 
-#export TARGET_KERNEL_CLANG_VERSION=proton  
+export TARGET_KERNEL_CLANG_VERSION=proton  
 m bacon -j$(nproc --all)
 #end3
