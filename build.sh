@@ -5,7 +5,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom 
 . build/envsetup.sh
-export lunch cherish_X00TD-userdebug
+lunch cherish_X00TD-userdebug
 export TZ=Asia/Kolkata
 brunch X00TD
 #end7
