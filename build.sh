@@ -7,5 +7,5 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 . build/envsetup.sh
 lunch cherish_X00TD-userdebug
 export TZ=Asia/Kolkata
-brunch X00TD
-#end7
+make bacon
+#end
