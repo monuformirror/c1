@@ -7,5 +7,9 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 . build/envsetup.sh
 lunch cherish_veux-userdebug
 export TZ=Asia/Kolkata
+export BUILD_USER=Monu
+export BUILD_HOST=Loda
+export BUILD_USERNAME=Monu
+export BUILD_HOSTNAME=Loda
 brunch veux 
 #end13
