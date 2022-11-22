@@ -10,7 +10,7 @@ export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
 export CCACHE_COMPRESS=true
 which ccache
-ccache -M 10
+ccache -M 15
 ccache -z
 command=$(tail $CIRRUS_WORKING_DIR/build.sh -n +$(expr $(grep '# build rom' $CIRRUS_WORKING_DIR/build.sh -n | cut -f1 -d:) - 1)| head -n -1 | grep -v '# end')
 bash -c "$command" |& tee -a $WORKDIR/rom/$name_rom/build.log || true #& sleep 100m
