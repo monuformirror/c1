@@ -48,7 +48,7 @@ echo -e \
 <b>📱 Device :- "${device}"</b>
 <b>📂 Size :- "$(ls -lh *zip | cut -d ' ' -f5)"</b>
 <b>🖥 Branch Build :- "${branch_name}"</b>
-<b>📥 Download Link :-</b> <a href=\"${DL_LINK}\">Here</a>
+<b>📥 Download Link :-</b> <a href=\"${DL_LINK}\">Rom</a>
 <b>📅 Date :- "$(date +%d\ %B\ %Y)"</b>
 <b>🕔 Time Zone :- "$(date +%T)"</b>
 ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
@@ -65,7 +65,7 @@ TG_TEXT=$(< tg.html)
 telegram_message "$TG_TEXT"
 echo
 echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
-msg Upload rom succes..
+msg Done Now Give Party..
 echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 echo
 echo Download Link: ${DL_LINK}

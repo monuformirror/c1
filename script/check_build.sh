@@ -31,7 +31,7 @@ if [[ $b == *'#### build completed successfully'* ]]
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 else
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
-  msg ❌ ...Build not completed... ❌
+  msg ❌ ...Not Done Fuck Off... ❌
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
   echo Wait lets backup ccache for ur next build 😅
 fi
