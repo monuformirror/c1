@@ -8,7 +8,7 @@ env:
   credentials: "ENCRYPTED[!d73137109fe350b5bb8ceb974c71ded5c6f633c1200e2a97e55144dfe085facb710ce0df16282b6621e8e06a5b541e73!]"
 
 task:
-  name: "Setting Up, Syncing, Building and Uploading"
+  name: "Sync, Build and Upload"
   only_if: $CIRRUS_REPO_OWNER == 'monuformirror'
   timeout_in: 120m
   container:
