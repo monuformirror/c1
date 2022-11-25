@@ -39,7 +39,7 @@ rclone copy out/target/product/$(grep unch $CIRRUS_WORKING_DIR/build.sh -m 1 | c
 cd $WORKDIR/rom/$name_rom/out/target/product/$device
 echo -e \
 "
-<b>✅ ♥️Build Completed Successfully❤️ ✅</b>
+<b>✅ ♥️Ho Gya Maa Chod Dege❤️ ✅</b>
 
 ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 <b>🚀 Rom Name :- ${name_rom}</b>
@@ -59,7 +59,7 @@ echo -e \
 <b>🙇 Maintainer : "Monu"</b>
 
 <b>🆑Device Changelogs:</b>
-<b>-Kya karega changelog ka</b>
+<b>-Karuga Generate</b>
 " > tg.html
 TG_TEXT=$(< tg.html)
 telegram_message "$TG_TEXT"
