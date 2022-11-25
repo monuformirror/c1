@@ -12,7 +12,7 @@ if [[ $a == *'FAILED:'* ]]
 then
 cd $WORKDIR/rom/$name_rom
 echo ━━━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━━━
-msg ⛔ .....Building Failed..... ⛔
+msg ⛔ .....Hat Bsdk..... ⛔
 echo ━━━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━━━
 curl -F document=@build.log "https://api.telegram.org/bot${TG_TOKEN}/sendDocument" \
     -F chat_id="${TG_CHAT_ID}" \
@@ -21,13 +21,13 @@ curl -F document=@build.log "https://api.telegram.org/bot${TG_TOKEN}/sendDocumen
     -F caption="⛔${device} Build $name_rom Error⛔
 
 
-Please be patient, this is a test. If you can't wait, just slam down your cellphone😅"
+Lo Chud Gai DT ya Source Ki Maa"
 curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendSticker" -d sticker="CAACAgQAAx0EabRMmQACAvhjEpueqrNRuGJo5vCfzrjjnFH1gAACagoAAtMOGVGNqOvAKmWo-h4E" -d chat_id="${TG_CHAT_ID}"
 fi
 if [[ $b == *'#### build completed successfully'* ]]
   then
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
-  msg ✅ Build is completed 100% ✅
+  msg ✅ Chod Di Maa CI Ki Ab Khus Hai ✅
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 else
   echo ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
