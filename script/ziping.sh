@@ -50,7 +50,6 @@ echo -e \
 <b>🖥 Branch Build :- "${branch_name}"</b>
 <b>📥 Download Link :-</b> <a href=\"${DL_LINK}\">Rom</a>
 <b>📅 Date :- "$(date +%d\ %B\ %Y)"</b>
-<b>🕔 Time Zone :- "$(date +%T)"</b>
 ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 <b>📕 MD5 :-</b> <code>"$(md5sum *zip | cut -d' ' -f1)"</code>
 <b>📘 SHA1 :-</b> <code>"$(sha1sum *zip | cut -d' ' -f1)"</code>
