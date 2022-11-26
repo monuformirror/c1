@@ -44,7 +44,7 @@ echo -e \
 ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
 <b>🚀 Rom Name :- ${name_rom}</b>
 <b>📁 File Name :-</b> <code>"${file_name}"</code>
-<b>⏰ Timer Build :- "$(grep "#### build completed successfully" $WORKDIR/rom/$name_rom/build.log -m 1 | cut -d '(' -f 2)"</b>
+<b>⏰ Build Time :- "$(grep "#### build completed successfully" $WORKDIR/rom/$name_rom/build.log -m 1 | cut -d '(' -f 2)"</b>
 <b>📱 Device :- "${device}"</b>
 <b>📂 Size :- "$(ls -lh *zip | cut -d ' ' -f5)"</b>
 <b>🖥 Branch Build :- "${branch_name}"</b>
