@@ -11,5 +11,5 @@ export BUILD_USER=Monu
 export BUILD_HOST=Loda
 export BUILD_USERNAME=Monu
 export BUILD_HOSTNAME=Loda
-brunch veux -j8
+make bacon -j8
 #end13
