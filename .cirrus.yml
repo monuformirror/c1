@@ -1,5 +1,5 @@
 env:
-  RCLONECONFIG_DRIVE: "ENCRYPTED[!ad5defae94fe1b02c5ce77420b6ced72427659f04b01363c5df075814af2c247fa0838af0147a2390372de69cf54db13!]"
+  RCLONECONFIG_DRIVE: "ENCRYPTED[!692a84767d5af72b8d7c4db52305519d619f3660af7405a2db51812dc25a171ce0495422c4636edaa631c0479c5af3e7!]"
   TG_TOKEN: "ENCRYPTED[!380d0ae6a656bd12a3b9a626f7b535b42a9be4a0e04235035ee970294c8ca2dfec01f1cc43c25888acc6671fa2c3782a!]"
   TG_CHAT_ID: "ENCRYPTED[!3fb39f1204dbca0d50a9904332a9ccf4f6477f751ea4c5aa4c3871567a652d506dc49db3e51e7bf878a1305e18924706!]"
   WORKDIR: "/tmp"
@@ -20,7 +20,7 @@ task:
      - ./script/load_ccache.sh
 
   Sync-rom_script:
-     - git config --global user.name "Monu"
+     - git config --global user.name "SharmaG"
      - git config --global user.email "$EMAIL"
      - echo "$credentials" > ~/.git-credentials
      - git config --global credential.helper store --file=~/.git-credentials
